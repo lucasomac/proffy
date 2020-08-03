@@ -1,4 +1,4 @@
-<div>
+<div align="center">
 
 ![github](web/src/assets/images/landing.svg "proffy")
 </div>
