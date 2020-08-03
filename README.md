@@ -19,21 +19,17 @@
 <div align="center">
 
 [![Autor](https://img.shields.io/badge/autor-Lucas%20de%20Oliveira%20Macedo-920629?style=flat-square)](https://github.com/lucasomac)
-![Linguagens](https://img.shields.io/github/languages/count/lucasomac/readme?color=920629&style=flat-square)
-[![Stars](https://img.shields.io/github/stars/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/stargazers)
-[![Forks](https://img.shields.io/github/forks/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/network/members)
-![Tamanho do código em bytes](https://img.shields.io/github/repo-size/lucasomac/readme?color=920629&style=flat-square)
-[![Last commit](https://img.shields.io/github/last-commit/lucasomac/readme?color=920629&style=flat-square)](https://github.com/lucasomac/readme/commits/master)
-[![Downloads](https://img.shields.io/github/downloads/lucasomac/readme/total?color=920629&style=flat-square)](https://github.com/lucasomac/readme/releases)
+![Linguagens](https://img.shields.io/github/languages/count/lucasomac/proffy?color=920629&style=flat-square)
+[![Stars](https://img.shields.io/github/stars/lucasomac/proffy?color=920629&style=flat-square)](https://github.com/lucasomac/proffy/stargazers)
+[![Forks](https://img.shields.io/github/forks/lucasomac/proffy?color=920629&style=flat-square)](https://github.com/lucasomac/proffy/network/members)
+![Tamanho do código em bytes](https://img.shields.io/github/repo-size/lucasomac/proffy?color=920629&style=flat-square)
+[![Last commit](https://img.shields.io/github/last-commit/lucasomac/proffy?color=920629&style=flat-square)](https://github.com/lucasomac/proffy/commits/master)
+[![Downloads](https://img.shields.io/github/downloads/lucasomac/proffy/total?color=920629&style=flat-square)](https://github.com/lucasomac/proffy/releases)
 </div>
-
-<p align="center">
-  Template open-source, contribua você também 😃
-</p>
 
 ## 💻 Projeto
 
-Este projeto foi desenvolvido para servir de template para criação de repositórios no Github. Desta forma é possivel termos um README padrão e pré customizado para os nossos repositórios
+Este projeto foi desenvolvido na NLW #2. O repositório contém os arquivos dos projetos web, mobile e banckend da aplicação proffy
 
 ## ⚙ Tecnologias
 
@@ -48,13 +44,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Esse projeto foi desenvolvido com o uso das seguintes ferramentas/IDE:
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Android Studio](https://developer.android.com/studio)
 - [WebStorm](https://www.jetbrains.com/pt-br/webstorm/)
-- [PyCharm](https://www.jetbrains.com/pt-br/pycharm/)
-- [DataGrip](https://www.jetbrains.com/pt-br/datagrip/)
-- [IntelliJIDEA](https://www.jetbrains.com/pt-br/idea/)
 
 ## 🤔 Como contribuir {#contribuir}
 
@@ -70,7 +61,7 @@ Para executar esse projeto na sua máquina,
 clone no repositório:
 
 ```bash
-$ git clone https://github.com/lucasomac/readme.git
+$ git clone https://github.com/lucasomac/proffy.git
 ```
 #### ⚒ Back-End
 Run ```yarn install``` in the server folder;
@@ -82,7 +73,7 @@ Run ```yarn install``` in the web folder;
 Run ```yarn start``` to up the project;
 
 #### 📲 Mobile
-Run ```npm install``` in the mobile folder
+Run ```yarn install``` in the mobile folder
 Update the baseURL at ```src/services/api.js```.
 Run ```expo start``` to up the project.
 
