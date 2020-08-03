@@ -1,6 +1,6 @@
 <div>
 
-![github](assets/landing.svg "proffy")
+![github](web/src/assets/images/landing.svg "proffy")
 </div>
 
 <div align="center">
