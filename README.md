@@ -1,11 +1,11 @@
 <div>
 
-![github](assets/logo.svg "proffy")
+![github](assets/landing.svg "proffy")
 </div>
 
 <div align="center">
 
-# README para uso em repositórios do GitHub</div>
+# PROFFY</div>
 <div align="center">
 
   [Projeto](#-projeto) | 
