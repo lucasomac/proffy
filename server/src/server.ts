@@ -1,10 +1,11 @@
 import express from 'express';
-import routes from "./routes";
+import routes from './routes';
+import cors from 'cors';
 
-//Constantes globais
 const app = express();
-app.use(routes);
+
+app.use(cors());
 app.use(express.json());
-app.listen(3333 || 10, () => {
-    console.log(`Server running at: http://localhost:3333/`)
-});
+app.use(routes);
+
+app.listen(3333);

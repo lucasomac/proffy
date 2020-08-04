@@ -1,20 +1,15 @@
-import {Router} from 'express';
+import express from 'express';
+import ClassesController from './controllers/ClassesController';
+import ConnectionsController from './controllers/ConnectionsController';
 
-const routes = Router();
-/* GET home page. */
-routes.get('/', (request, response) => {
-    response.send({message: 'Endpoint Working - API Sucefull!'});
-});
-/* Classes */
-routes.post('/classes', (request, response) => {
-    const {name, avatar, whatsapp, bio, subject, cost, schedule} = request.body;
-});
+
+const routes = express.Router();
+const classesControllers = new ClassesController();
+const connectionsControllers = new ConnectionsController();
+routes.get('/classes', classesControllers.index);
+routes.post('/classes', classesControllers.create);
+
+routes.get('/connections', connectionsControllers.index);
+routes.post('/connections', connectionsControllers.create);
+
 export default routes;
-
-/**
- *Tipos de parâmetros:
- *
- * Query Params: Parâmetros nomeados enviados na rota após "?" (Filtros, paginação) --> request.query
- * Route Params: Parâmentros utilizados para identificar recursos EX: /users/:1 --> request.params
- * Request Body: Corpo da requisição, utlizado para criar ou alterar recursos --> request.body
- **/
