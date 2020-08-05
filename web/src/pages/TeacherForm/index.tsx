@@ -3,6 +3,7 @@ import PageHeader from "../../components/PageHeader";
 import './styles.css';
 import Input from "../../components/Input";
 import warningIcon from "../../assets/images/icons/warning.svg";
+import TextArea from "../../components/TextArea";
 
 function TeacherForm() {
     return (
@@ -15,6 +16,7 @@ function TeacherForm() {
                     <Input label="Nome Completo" name="name"/>
                     <Input label="Avatar" name="avatar"/>
                     <Input label="Whatsapp" name="whatsapp"/>
+                    <TextArea label="Biografia" name="bio"/>
                 </fieldset>
                 <fieldset>
                     <legend>Sobre a aula</legend>
