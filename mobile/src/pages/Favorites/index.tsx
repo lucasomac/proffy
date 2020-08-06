@@ -1,12 +1,12 @@
 import React from "react";
-import {Text, View} from "react-native";
+import {View} from "react-native";
 import styles from "./styles";
-import {RectButton} from "react-native-gesture-handler";
+import PageHeader from "../../components/PageHeader";
 
 export default function Favorites() {
     return (
         <View style={styles.container}>
-
+            <PageHeader title="Proffys Favoritos"/>
         </View>
     );
 }
