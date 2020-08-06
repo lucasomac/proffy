@@ -35,7 +35,7 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
+*/node_modules/*
 jspm_packages/
 /.pnp
 .pnp.js
@@ -73,3 +73,17 @@ typings/
 .idea/
 # Databases
 *.sqlite
+
+
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
