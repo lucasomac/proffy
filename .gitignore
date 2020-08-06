@@ -75,7 +75,7 @@ typings/
 *.sqlite
 
 
-.expo/*
+*.expo/*
 npm-debug.*
 *.jks
 *.p8
