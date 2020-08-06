@@ -8,7 +8,7 @@ import {useHistory} from 'react-router-dom';
 
 import warningIcon from '../../assets/images/icons/warning.svg'
 
-import './style.css';
+import './styles.css';
 
 function TeacherForm() {
     const history = useHistory();

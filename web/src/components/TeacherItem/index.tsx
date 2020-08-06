@@ -3,7 +3,7 @@ import api from '../../services/api';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
-import './style.css'
+import './styles.css'
 
 export interface Teacher {
     id: number;
