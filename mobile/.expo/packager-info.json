@@ -1,6 +1,6 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
+  "expoServerPort": null,
   "packagerPort": 19001,
   "packagerPid": 4348,
   "expoServerNgrokUrl": "https://m2-v7q.anonymous.mobile.exp.direct",
