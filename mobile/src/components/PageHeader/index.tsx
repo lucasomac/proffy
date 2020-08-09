@@ -1,17 +1,19 @@
-import React from "react";
-import {Image, Text, View} from "react-native";
-import styles from "./styles";
+import React, {ReactNode} from 'react';
+import {Image, Text, View} from 'react-native';
 import {BorderlessButton} from 'react-native-gesture-handler';
-import backIcon from '../../assets/images/icons/back.png';
-import logoImg from '../../assets/images/logo.png';
-import {useNavigation} from "@react-navigation/native";
+import {useNavigation} from '@react-navigation/native';
+
+import backIcon from '../../assets/images/icons/back.png'
+import logoImg from '../../assets/images/logo.png'
+
+import styles from './styles';
 
 interface PageHeaderProps {
     title: string;
+    headerRight?: ReactNode;
 }
 
-export default function PageHeader(props: PageHeaderProps) {
-    let {title} = props;
+const PageHeader: React.FunctionComponent<PageHeaderProps> = ({title, headerRight, children}) => {
     const {navigate} = useNavigation();
 
     function handleGoBack() {
@@ -24,11 +26,18 @@ export default function PageHeader(props: PageHeaderProps) {
                 <BorderlessButton onPress={handleGoBack}>
                     <Image source={backIcon} resizeMode="contain"/>
                 </BorderlessButton>
+
                 <Image source={logoImg} resizeMode="contain"/>
             </View>
-            <Text style={styles.title}>
-                {title}
-            </Text>
+
+            <View style={styles.header}>
+                <Text style={styles.title}>{title}</Text>
+                {headerRight}
+            </View>
+
+            {children}
         </View>
-    );
+    )
 }
+
+export default PageHeader;
